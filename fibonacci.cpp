@@ -2,7 +2,7 @@
 
 /*
 Algorithm Fibonacci(n){
-//
+// Computer the n-th Fibonacci number
 if(n <=1)
     write(n);
 else{
