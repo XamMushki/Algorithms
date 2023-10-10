@@ -14,18 +14,15 @@ int areRelativelyPrime(int num1, int num2) {
     int smallest = min(num1, num2);
     // we will check if any of numbers from 2-to-smallest (inc. both) divides the
     //  both numbers (num1 and num2).
-    for (int i = 2; i <= smallest; i++) {
+    for (int i = 2; i <= /* code */
+                    smallest;
+         i++) {
         if (num1 % i == 0 && num2 % i == 0) {
             return (i);  // NOT Relatively Prime
             // returns the common factor
         }
     }
     return -1;  // Relatively Prime, didn't find any of the common factors.
-}
-
-// Function to (try to) find the last two consecutive Relatively prime numbers (that can possibly be found).
-// By consecutive we mean, there difference is 1. Such as 3 and 5, 9 and 13, and so on.
-void findConsecuteCoprimes() {
 }
 
 int main() {
